@@ -1,0 +1,5 @@
+pandas~=1.2.0
+streamlit~=0.74.1
+sqlite3
+matplotlib~=3.3.3
+plotly
