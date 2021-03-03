@@ -8,8 +8,6 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import sqlite3
-import matplotlib
-import matplotlib.pyplot as plt
 
 # 文字化けを防ぐおまじない
 # reload(sys)
