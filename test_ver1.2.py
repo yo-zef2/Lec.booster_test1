@@ -52,9 +52,12 @@ if st.button("▼お住まいの市区町村の音楽教室情報を知る▼"):
 #############市区町村別の音楽教室情報################
 
     # ファイルを読み込む
+    #
+    # music_school_df = pd.read_excel("pivot_data_music_school.xls")
+    # populations = pd.read_excel("市区町村別人口.xlsx")
 
-    music_school_df = pd.read_excel("pivot_data_music_school.xls")
-    populations = pd.read_excel("市区町村別人口.xlsx")
+    music_school_df = pd.read_csv("pivot_data_music_school.csv")
+    populations = pd.read_csv("市区町村別人口.csv")
 
     # 市区町村平均人口の算出
 
