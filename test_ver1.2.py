@@ -323,7 +323,8 @@ if st.button("▼価格を診断する▼"):
                             tokyo_university*(-0.535470)+
                             composition*(4.651286)+
                             study_abroad*(9.124657))
-    #
+    col_names_for_pivot_data = ['formed_address', 'number_of_schools', 'average_price', 'max_price', 'min_price']
+    music_school_df = pd.read_csv("pivot_data_music_school.csv", names=col_names_for_pivot_data)
     # music_school_df = pd.read_excel("/Users/ariikeisuke/Desktop/Datamix_ver1.2/市町村別人口/pivot_data_music_school.xlsx")
 
     number_of_population = music_school_df[music_school_df[
@@ -345,9 +346,9 @@ if st.button("▼価格を診断する▼"):
     st.write('あなたの教室の予測価格(円)/1分あたり　は', round(explanatory_variable))
     st.write('あなたの教室の現状価格(円)/月額　は', round(lesson_price*lesson_minutes*lesson_times))
     st.write('あなたの教室の現状価格(円)/1分あたり　は',  round(lesson_price))
-    st.write('近隣の音楽教室の平均価格(1分あたり)', round(average_price))
-    st.write('近隣の音楽教室の最安価格(1分あたり)', round(min_price))
-    st.write('近隣の音楽教室の最高価格(1分あたり)', round(max_price))
+    st.write('近隣の音楽教室の平均価格(1分あたり)', (average_price))
+    st.write('近隣の音楽教室の最安価格(1分あたり)', (min_price))
+    st.write('近隣の音楽教室の最高価格(1分あたり)', (max_price))
 
     st.write("【▼価格の計算について】"
              "  \n  ・計算に使用したデータはいくつかのwebサイトから引っ張ってきた教室データとなります。"
