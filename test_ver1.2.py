@@ -289,12 +289,11 @@ number_of_students = st.number_input("▼生徒数▼",
                                                  value=0,
                                                  step=1)
 
-lesson_minutes = st.number_input("▼レッスン時間/1レッスン▼",
+lesson_minutes = st.number_input("▼レッスン時間(分)/1レッスン▼",
                                          min_value = 0,
                                          max_value = 240,
                                          value = 0,
                                          step = 1)
-
 
 lesson_times = st.number_input("▼1カ月のレッスン回数/1人あたり▼",
                                        min_value = 0,
@@ -302,7 +301,7 @@ lesson_times = st.number_input("▼1カ月のレッスン回数/1人あたり▼
                                        value = 0,
                                        step = 1)
 
-price_par_lesson = st.number_input("▼レッスン金額/1レッスンあたり▼",
+price_par_lesson = st.number_input("▼レッスン金額(円)/1レッスンあたり▼",
                                    min_value = 0,
                                    max_value = 100000,
                                    value = 0,
