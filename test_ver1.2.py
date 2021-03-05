@@ -76,7 +76,7 @@ if st.button("▼お住まいの市区町村の音楽教室情報を知る▼"):
 
     # 平均年齢を表示させる。
     expander_ages = st.beta_expander(name_city + 'の平均年齢を知る')
-    expander_ages.write(round(average_age_in_the_city))
+    expander_ages.write(average_age_in_the_city)
 
     #
     # st.write("全国平均人口", average_population_in_japan)
