@@ -323,8 +323,8 @@ if st.button("▼価格を診断する▼"):
                             tokyo_university*(-0.535470)+
                             composition*(4.651286)+
                             study_abroad*(9.124657))
-
-    music_school_df = pd.read_excel("/Users/ariikeisuke/Desktop/Datamix_ver1.2/市町村別人口/pivot_data_music_school.xlsx")
+    #
+    # music_school_df = pd.read_excel("/Users/ariikeisuke/Desktop/Datamix_ver1.2/市町村別人口/pivot_data_music_school.xlsx")
 
     number_of_population = music_school_df[music_school_df[
         "formed_address"].isin([name_city_with_prefecture])]["number_of_schools"]
